@@ -15,7 +15,7 @@ submitButton.addEventListener("click", e => {
   // messageTwo.textContent = "";
   // messageThree.textContent = "";
 
-  fetch(`http://127.0.0.1/fact?month=${month}&day=${day}`).then(response => {
+  fetch(`/fact?month=${month}&day=${day}`).then(response => {
     response.json().then(data => {
       console.log(data);
       if (data.error) {
